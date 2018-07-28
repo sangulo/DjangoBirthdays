@@ -4,8 +4,8 @@ from __future__ import unicode_literals
 import datetime
 from django.db import models
 from django.utils import timezone
-from django.urls import reverse
-from django.core.urlresolvers import reverse
+from django.urls import reverse #Post Django 2.0 (your PC)
+# from django.core.urlresolvers import reverse # Pre Django 2.0 (your Mac)
 
 
 class Person(models.Model):

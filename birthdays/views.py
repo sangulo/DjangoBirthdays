@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from django.shortcuts import get_object_or_404, redirect, render
-from django.core.urlresolvers import reverse_lazy
+# from django.core.urlresolvers import reverse_lazy
+from django.urls import reverse_lazy
 from .forms import InvitationForm, EventForm, PersonForm, EventDetailForm
 from django.views.generic import ListView, DetailView, \
     CreateView, UpdateView, DeleteView
@@ -9,7 +10,7 @@ from .models import Event, Invitation, Person
 from django.utils import timezone
 import datetime
 from django.views.generic.edit import ModelFormMixin
-import functions
+from birthdays import functions
 from django.conf import settings
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse, HttpResponseRedirect

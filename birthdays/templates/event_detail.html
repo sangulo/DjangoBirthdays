@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{%  block content %}
+<div class="event">
+    {%  if event.created_dt %}
+        <h3>{{ event.title }}</h3>
+        <p><b>When:</b>  {{ event.event_dt }}</p>
+        <p><b>What:</b>  {{ event.invitation_text }}</p>
+        <h4>Guest List:</h4>
+        <ul>
+            {% for invitee in invitees %}
+                <li>{{ invitee.person }}  {{ invitee.response }} </li>
+            {%  endfor %}
+        </ul>
+        {% if yes_responses %}
+            <h4>Attending:</h4>
+            <ul>
+    {#        The following prints all the "YES" responses#}
+                {% for rsvp in yes_responses %}
+                    <li>{{  rsvp.person }} {{rsvp.response}}</li>
+                {%  endfor %}
+            </ul>
+        {% endif %}
+        {% if no_responses %}
+            <h4>Not Attending:</h4>
+            <ul>
+    {#        The following prints all the "YES" responses#}
+                {% for rsvp in no_responses %}
+                    <li>{{  rsvp.person }} {{rsvp.response}}</li>
+                {%  endfor %}
+            </ul>
+        {% endif %}
+        {% if user.is_authenticated %}
+            <a class="btn btn-default" href="{% url 'event_update' pk=event.pk %}">
+                <span class="glyphicon glyphicon-pencil"></span></a>
+            <a class="btn btn-default" href="{% url 'event_delete' pk=event.pk %}">
+                <span class="glyphicon glyphicon-remove"></span>
+            </a>
+        {% endif %}
+    {% endif %}
+{#    {{ form.as_p }}#}
+</div>
+<h5><a href="{%  url 'event_list' %}" class="one">Back to list</a></h5>
+{% endblock %}

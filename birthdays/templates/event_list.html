@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="upcoming">
+        <h4>Events</h4>
+            {% for event in all_events %}
+                <li>
+                    <a href="{%  url 'event_detail' pk=event.pk %}">{{ event.title }}</a>
+                    {{ event.event_dt }}
+                </li>
+            {%  endfor %}
+    <br>
+        <a class="btn btn-default" href="{% url 'event_create' %}">New Event</a>
+    </div>
+{% endblock %}

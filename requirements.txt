@@ -1,0 +1,15 @@
+pycountry
+phonenumberslite
+djangorestframework>=3.4
+django
+pysftp
+vprd-common
+vprd-common-crypto
+vprd-common-pype
+vprd-common-dboutage
+vprd-common-shutdown
+vprd-vip-auth
+vprd-vip-infrastructure
+vprd-vip-static-legacy
+vprd-vip-bio-core
+vprd-vip-prospect-core

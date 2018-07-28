@@ -1,0 +1,529 @@
+[
+	{
+		"model": "contenttypes.contenttype",
+		"pk": 1,
+		"fields": {
+			"app_label": "admin",
+			"model": "logentry"
+		}
+	},
+	{
+		"model": "contenttypes.contenttype",
+		"pk": 2,
+		"fields": {
+			"app_label": "auth",
+			"model": "group"
+		}
+	},
+	{
+		"model": "contenttypes.contenttype",
+		"pk": 3,
+		"fields": {
+			"app_label": "auth",
+			"model": "permission"
+		}
+	},
+	{
+		"model": "contenttypes.contenttype",
+		"pk": 4,
+		"fields": {
+			"app_label": "auth",
+			"model": "user"
+		}
+	},
+	{
+		"model": "contenttypes.contenttype",
+		"pk": 5,
+		"fields": {
+			"app_label": "contenttypes",
+			"model": "contenttype"
+		}
+	},
+	{
+		"model": "contenttypes.contenttype",
+		"pk": 6,
+		"fields": {
+			"app_label": "sessions",
+			"model": "session"
+		}
+	},
+	{
+		"model": "contenttypes.contenttype",
+		"pk": 7,
+		"fields": {
+			"app_label": "birthdays",
+			"model": "person"
+		}
+	},
+	{
+		"model": "contenttypes.contenttype",
+		"pk": 8,
+		"fields": {
+			"app_label": "birthdays",
+			"model": "event"
+		}
+	},
+	{
+		"model": "contenttypes.contenttype",
+		"pk": 9,
+		"fields": {
+			"app_label": "birthdays",
+			"model": "invitation"
+		}
+	},
+	{
+		"model": "sessions.session",
+		"pk": "0uukvjpyux3qnficskb1xafk8abohgsu",
+		"fields": {
+			"session_data": "MjVhMmNiZjFlYTEwMDY0ZTk3Zjc5ZDczMWI4MzEwMDZjN2EwNTM5NDp7Il9hdXRoX3VzZXJfaGFzaCI6ImUwYjhmZWI4M2JmZTI4M2FkZTFkOWQ4OWNiZmJhZjUzZjJiZmQxMzMiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+			"expire_date": "2017-11-10T18:42:17.479Z"
+		}
+	},
+	{
+		"model": "sessions.session",
+		"pk": "ym2zdcni7hogew643egtjo3qd8zywbi0",
+		"fields": {
+			"session_data": "MjVhMmNiZjFlYTEwMDY0ZTk3Zjc5ZDczMWI4MzEwMDZjN2EwNTM5NDp7Il9hdXRoX3VzZXJfaGFzaCI6ImUwYjhmZWI4M2JmZTI4M2FkZTFkOWQ4OWNiZmJhZjUzZjJiZmQxMzMiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+			"expire_date": "2017-11-20T21:30:03.383Z"
+		}
+	},
+	{
+		"model": "birthdays.event",
+		"pk": 1,
+		"fields": {
+			"created_dt": "2017-11-06T21:30:07Z",
+			"title": "First birthday Event",
+			"invitation_text": "This is the first birthday event we will use",
+			"event_dt": "2017-11-15T21:30:42Z"
+		}
+	},
+	{
+		"model": "birthdays.event",
+		"pk": 2,
+		"fields": {
+			"created_dt": "2017-11-06T21:30:44Z",
+			"title": "Birthday #2",
+			"invitation_text": "This is the second birthday.  We hope you can make this one if you didn't make the first.",
+			"event_dt": "2017-11-22T21:31:15Z"
+		}
+	},
+	{
+		"model": "birthdays.event",
+		"pk": 3,
+		"fields": {
+			"created_dt": "2017-11-06T21:31:16Z",
+			"title": "Our 3rd birthday event",
+			"invitation_text": "This is the 3rd birthday event.  Enjoy!!!",
+			"event_dt": "2017-12-20T21:31:47Z"
+		}
+	},
+	{
+		"model": "birthdays.event",
+		"pk": 4,
+		"fields": {
+			"created_dt": "2017-11-07T19:34:23.111Z",
+			"title": "Rachie's Birthday Extravaganza",
+			"invitation_text": "Come enjoy the experience that is Rachel's birthday.  You won't regret it.  Unless you are an asshole or assholette.",
+			"event_dt": "2018-03-12T05:00:00Z"
+		}
+	},
+	{
+		"model": "birthdays.person",
+		"pk": 1,
+		"fields": {
+			"name": "Sergio Angulo Jr",
+			"email": "sergioangulojr@gmail.com",
+			"birth_dt": "1974-03-07",
+			"created_dt": "2017-11-08T01:23:25.934Z"
+		}
+	},
+	{
+		"model": "birthdays.person",
+		"pk": 2,
+		"fields": {
+			"name": "Sergio Angulo Hotmail",
+			"email": "sangulo3@hotmail.com",
+			"birth_dt": "1984-03-12",
+			"created_dt": "2017-11-08T02:17:13.003Z"
+		}
+	},
+	{
+		"model": "birthdays.person",
+		"pk": 3,
+		"fields": {
+			"name": "Sergio Angulo gmail",
+			"email": "sangulo3@gmail.com",
+			"birth_dt": "1974-03-13",
+			"created_dt": "2017-11-08T01:23:25.934Z"
+		}
+	},
+	{
+		"model": "birthdays.person",
+		"pk": 4,
+		"fields": {
+			"name": "Rachel \"Rachie\" Ames",
+			"email": "ryames@gmail.com",
+			"birth_dt": "1984-03-12",
+			"created_dt": "2017-11-08T02:43:41.065Z"
+		}
+	},
+	{
+		"model": "birthdays.person",
+		"pk": 5,
+		"fields": {
+			"name": "Harry Carey",
+			"email": "hc@hotmail.com",
+			"birth_dt": "1922-12-01",
+			"created_dt": "2017-11-08T02:44:18.528Z"
+		}
+	},
+	{
+		"model": "birthdays.person",
+		"pk": 6,
+		"fields": {
+			"name": "Test McWatters",
+			"email": "sangulo@austin.utexas.edu",
+			"birth_dt": "1968-07-02",
+			"created_dt": "2017-11-15T17:22:18.998Z"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 1,
+		"fields": {
+			"name": "Can add log entry",
+			"content_type": 1,
+			"codename": "add_logentry"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 2,
+		"fields": {
+			"name": "Can change log entry",
+			"content_type": 1,
+			"codename": "change_logentry"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 3,
+		"fields": {
+			"name": "Can delete log entry",
+			"content_type": 1,
+			"codename": "delete_logentry"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 4,
+		"fields": {
+			"name": "Can add group",
+			"content_type": 2,
+			"codename": "add_group"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 5,
+		"fields": {
+			"name": "Can change group",
+			"content_type": 2,
+			"codename": "change_group"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 6,
+		"fields": {
+			"name": "Can delete group",
+			"content_type": 2,
+			"codename": "delete_group"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 7,
+		"fields": {
+			"name": "Can add permission",
+			"content_type": 3,
+			"codename": "add_permission"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 8,
+		"fields": {
+			"name": "Can change permission",
+			"content_type": 3,
+			"codename": "change_permission"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 9,
+		"fields": {
+			"name": "Can delete permission",
+			"content_type": 3,
+			"codename": "delete_permission"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 10,
+		"fields": {
+			"name": "Can add user",
+			"content_type": 4,
+			"codename": "add_user"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 11,
+		"fields": {
+			"name": "Can change user",
+			"content_type": 4,
+			"codename": "change_user"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 12,
+		"fields": {
+			"name": "Can delete user",
+			"content_type": 4,
+			"codename": "delete_user"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 13,
+		"fields": {
+			"name": "Can add content type",
+			"content_type": 5,
+			"codename": "add_contenttype"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 14,
+		"fields": {
+			"name": "Can change content type",
+			"content_type": 5,
+			"codename": "change_contenttype"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 15,
+		"fields": {
+			"name": "Can delete content type",
+			"content_type": 5,
+			"codename": "delete_contenttype"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 16,
+		"fields": {
+			"name": "Can add session",
+			"content_type": 6,
+			"codename": "add_session"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 17,
+		"fields": {
+			"name": "Can change session",
+			"content_type": 6,
+			"codename": "change_session"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 18,
+		"fields": {
+			"name": "Can delete session",
+			"content_type": 6,
+			"codename": "delete_session"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 19,
+		"fields": {
+			"name": "Can add person",
+			"content_type": 7,
+			"codename": "add_person"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 20,
+		"fields": {
+			"name": "Can change person",
+			"content_type": 7,
+			"codename": "change_person"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 21,
+		"fields": {
+			"name": "Can delete person",
+			"content_type": 7,
+			"codename": "delete_person"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 22,
+		"fields": {
+			"name": "Can add event",
+			"content_type": 8,
+			"codename": "add_event"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 23,
+		"fields": {
+			"name": "Can change event",
+			"content_type": 8,
+			"codename": "change_event"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 24,
+		"fields": {
+			"name": "Can delete event",
+			"content_type": 8,
+			"codename": "delete_event"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 25,
+		"fields": {
+			"name": "Can add invitation",
+			"content_type": 9,
+			"codename": "add_invitation"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 26,
+		"fields": {
+			"name": "Can change invitation",
+			"content_type": 9,
+			"codename": "change_invitation"
+		}
+	},
+	{
+		"model": "auth.permission",
+		"pk": 27,
+		"fields": {
+			"name": "Can delete invitation",
+			"content_type": 9,
+			"codename": "delete_invitation"
+		}
+	},
+	{
+		"model": "auth.user",
+		"pk": 1,
+		"fields": {
+			"password": "pbkdf2_sha256$36000$i7SPy4Cw0Ggg$Z1BhqLeiQYx7KSfK+1EfOtOol2Nggu7M5GRh4xviu+A=",
+			"last_login": "2017-11-06T21:30:03.381Z",
+			"is_superuser": true,
+			"username": "sergioangulo",
+			"first_name": "",
+			"last_name": "",
+			"email": "sangulo@austin.utexas.edu",
+			"is_staff": true,
+			"is_active": true,
+			"date_joined": "2017-10-27T18:42:11.304Z",
+			"groups": [],
+			"user_permissions": []
+		}
+	},
+	{
+		"model": "admin.logentry",
+		"pk": 1,
+		"fields": {
+			"action_time": "2017-10-27T18:42:59.137Z",
+			"user": 1,
+			"content_type": 7,
+			"object_id": "1",
+			"object_repr": "Sergio Angulo Jr",
+			"action_flag": 1,
+			"change_message": "[{\"added\": {}}]"
+		}
+	},
+	{
+		"model": "admin.logentry",
+		"pk": 2,
+		"fields": {
+			"action_time": "2017-10-27T18:43:42.767Z",
+			"user": 1,
+			"content_type": 7,
+			"object_id": "2",
+			"object_repr": "Sergio Angulo hotmail",
+			"action_flag": 1,
+			"change_message": "[{\"added\": {}}]"
+		}
+	},
+	{
+		"model": "admin.logentry",
+		"pk": 3,
+		"fields": {
+			"action_time": "2017-10-27T18:44:19.217Z",
+			"user": 1,
+			"content_type": 7,
+			"object_id": "3",
+			"object_repr": "Sergio Angulo gmail",
+			"action_flag": 1,
+			"change_message": "[{\"added\": {}}]"
+		}
+	},
+	{
+		"model": "admin.logentry",
+		"pk": 4,
+		"fields": {
+			"action_time": "2017-11-06T21:30:44.385Z",
+			"user": 1,
+			"content_type": 8,
+			"object_id": "1",
+			"object_repr": "First birthday Event",
+			"action_flag": 1,
+			"change_message": "[{\"added\": {}}]"
+		}
+	},
+	{
+		"model": "admin.logentry",
+		"pk": 5,
+		"fields": {
+			"action_time": "2017-11-06T21:31:16.555Z",
+			"user": 1,
+			"content_type": 8,
+			"object_id": "2",
+			"object_repr": "Birthday #2",
+			"action_flag": 1,
+			"change_message": "[{\"added\": {}}]"
+		}
+	},
+	{
+		"model": "admin.logentry",
+		"pk": 6,
+		"fields": {
+			"action_time": "2017-11-06T21:31:49.084Z",
+			"user": 1,
+			"content_type": 8,
+			"object_id": "3",
+			"object_repr": "Our 3rd birthday event",
+			"action_flag": 1,
+			"change_message": "[{\"added\": {}}]"
+		}
+	}
+]

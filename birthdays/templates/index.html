@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="upcoming">
+        <h4>Upcoming Events</h4>
+            {% for event in upcoming_events %}
+                <li>
+                    <a href="{%  url 'event_detail' pk=event.pk %}">{{ event.title }}</a>
+                    {{ event.event_dt }}
+                </li>
+            {%  endfor %}
+    <br>
+        <a href="{%  url 'event_list' %}" class="btn btn-default">All Events</a></p>
+    <br>
+        <h4>Upcoming Birthdays (next 60 days)</h4>
+            {% for person in upcoming_birthdays %}
+                <li>
+                    <a href="{% url 'person_detail' pk=person.pk %}">{{ person.name }}</a>
+                    {{ person.birth_dt }}
+                </li>
+            {%  endfor %}
+        <br>
+        <a href="{%  url 'person_list' %}" class="btn btn-default">All Birthdays</a>
+    <br>
+    <br>
+        <h4>Active Invitations</h4>
+            {% for invitation in active_invitations %}
+                <li>
+                    <a href="{% url 'invitation_detail' pk=invitation.pk %}">{{ invitation.event }}</a>
+                    {{ invitation.person }} {{ invitation.response }}
+                </li>
+            {%  endfor %}
+        <br>
+{#        <a href="{%  url 'person_list' %}" class="btn btn-default">Active Invitations</a>#}
+    <br>
+    <br>
+        <h4>Past Events</h4>
+            {% for event in past_events %}
+                <li>
+                    <a href="{% url 'event_detail' pk=event.pk %}">{{ event.title }}</a>
+                    {{ event.event_dt }}
+                </li>
+            {%  endfor %}
+        <br>
+    <br>
+    </div>
+{% endblock %}

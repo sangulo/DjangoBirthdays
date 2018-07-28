@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="upcoming">
+        <h4>All Persons</h4>
+            {% for person in all_persons %}
+                <li>
+                    <a href="{% url 'person_detail' pk=person.pk %}">{{ person.name }}</a>
+                    {{ person.birth_dt }}
+                </li>
+            {%  endfor %}
+        <a class="btn btn-default" href="{% url 'person_create' %}">New Person</a>
+    </div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% load staticfiles %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Birthday Events</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/birthdays.css' %}">
+</head>
+<body>
+    <div class="page-header">
+        <h1><a href="{% url 'index' %}">VIP Birthdays...let's party!</a></h1>
+    </div>
+    <div class="content container">
+        {%  block content %}
+        {% endblock %}
+    </div>
+    </div>
+</body>
+</html>

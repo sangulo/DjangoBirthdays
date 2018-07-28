@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{%  block content %}
+    <h1>Edit {{ form.instance.name }}
+    </h1>
+<form method='POST'>
+    {% csrf_token %}
+    <h3>Event:  {{ invitation.event }}</h3>
+    <h4>Guest:  {{ invitation.person }}</h4>
+    {{ form.as_p }}
+    <input type="submit" class="btn btn-primary" value="Save">
+</form>
+{% endblock %}

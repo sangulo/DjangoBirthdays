@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from django.shortcuts import get_object_or_404, redirect, render
-# from django.core.urlresolvers import reverse_lazy
-from django.urls import reverse_lazy
+# from django.core.urlresolvers import reverse_lazy # Pre Django 2.0 (your Mac)
+from django.urls import reverse_lazy #Post Django 2.0 (your PC)
 from .forms import InvitationForm, EventForm, PersonForm, EventDetailForm
-from django.views.generic import ListView, DetailView, \
-    CreateView, UpdateView, DeleteView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Event, Invitation, Person
 from django.utils import timezone
 import datetime
